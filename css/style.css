@@ -8076,3 +8076,54 @@ header.mobile.new .middle .search-link a small {
 #wishlist .boxProduct .pagamento b {
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  header.hp > nav {
+    display: none;
+  }
+  body nav.megamenu {
+    height: calc(100vh - 105px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  nav.megamenu .container > ul {
+    padding: 12px 16px;
+  }
+  nav.megamenu .container > ul.menu > li.menu-item {
+    display: block;
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  nav.megamenu .container > ul > li > ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 10px;
+    padding-top: 8px;
+  }
+  nav.megamenu .container > ul > li > ul > li.imageCover {
+    display: none;
+  }
+  nav.megamenu .container > ul > li > ul a {
+    display: block;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .produtos-home-tab .tabsHome {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .produtos-home-tab .tabsHome a {
+    flex: 0 0 auto;
+    width: auto;
+    white-space: nowrap;
+  }
+}
