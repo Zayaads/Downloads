@@ -1,0 +1,12 @@
+{
+  "name": "saint-germain-storefront",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env.local server.js",
+    "start": "node --env-file-if-exists=.env.local server.js",
+    "test": "node --test"
+  }
+}
